@@ -1,0 +1,127 @@
+    1  exit
+    2  /
+    3  clear
+    4  exit
+    5  man ls
+    6  ls
+    7  ls -a
+    8  ls -F
+    9  ls -a
+   10  ls -f
+   11  ls -d */
+   12  ls -1
+   13  ls -r
+   14  ls -R
+   15  ls -R1
+   16  man ls
+   17  mkdir task01
+   18  mkdir -p task01/year/month/week
+   19  touch task01/year/07dil
+   20  touch task01/year/17end
+   21  touch task01/year/month/01always
+   22  touch task01/year/month/19geo
+   23  touch task01/year/month/week/08sea
+   24  touch task01/year/month/week/10no
+   25  touch task01/year/month/week/18sum
+   26  mkdir -p task01/jan/april/spring
+   27  touch task01/jan/05wen
+   28  touch task01/jan/15silk
+   29  touch task01/jan/april/06mot
+   30  touch task01/jan/april/11tak
+   31  touch task01/jan/april/12eco
+   32  touch task01/jan/april/spring/04con
+   33  touch task01/jan/april/spring/16bhi
+   34  mkdir -p task01/sun/sat
+   35  touch task01/sun/02tab
+   36  touch task01/sun/sat/03win
+   37  touch task01/sun/sat/13toob
+   38  touch task01/sun/sat/14tea
+   39  touch task01/sun/sat/20dwn
+   40  echo "The sun was shining brightly in the sky." > 01always
+   41  echo "The cat jumped onto the roof." > 02tab
+   42  echo "The boy rode his bike to the park" > 03win
+   43  echo "The river flowed gently through the valley." > 04con
+   44  echo "The wind blew through the trees." > 06mot
+   45  echo "The birds sang in the morning light." > 07dil
+   46  echo "The dog chased its tail." > 08sea
+   47  touch task01/year/month/week/09yes
+   48  echo "The train whistled as it passed by." > 09yes
+   49  echo "The stars twinkled in the night sky." > 10no
+   50  echo "The moon rose over the horizon." > 11tak
+   51  echo "The car drove down the street." > 12eco
+   52  echo "The clouds floated in the sky." > 13toob
+   53  echo "The rain fell from the sky." > 14tea
+   54  echo "The leaves rustled in the wind." > 15silk
+   55  echo "The sun set behind the mountains." > 16bhi
+   56  echo "The waves crashed against the shore." > 17end
+   57  echo "The fish swam in the pond." > 18sum
+   58  echo "The tree swayed in the breeze." > 19geo
+   59  echo "The fire crackled in the fireplace." > 20dwn
+   60  history > taskcommands.hst
+   61  cat taskcommands.hst
+   62  clear
+   63  sudo apt update
+   64  sudo apt install mysql-server
+   65  sudo mysql
+   66  close
+   67  exit
+   68  cd adder
+   69  cargo new adder
+   70  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   71  rustc --version
+   72  rust --version
+   73  cargo --version
+   74  source $HOME/.cargo/env
+   75  cargo --version
+   76  clear
+   77  cargo new adder
+   78  cd adder
+   79  runtime/
+   80  mkdir runtime
+   81  touch runtime/start.rs
+   82  touch Makefile
+   83  mkdir test
+   84  touch transcript.txt
+   85  touch test/test1.snek
+   86  touch test/test2.snek
+   87  touch test/test3.snek
+   88  touch test/test4.snek
+   89  touch test/test5.snek
+   90  touch test/test6.snek
+   91  touch test/test7.snek
+   92  touch test/test8.snek
+   93  touch test/test9.snek
+   94  touch test/test10.snek
+   95  nano test/test1.snek
+   96  cat test/test1.snek
+   97  echo -7 > test/test2.snek
+   98  cat test/test2.snek
+   99  echo "(add1 10)" > test/test3.snek
+  100  cat test/test3.snek
+  101  echo "(sub1 10)" > test/test4.snek
+  102  echo "(negate 8)" > test/test5.snek
+  103  echo "(add1 (add1 5))" > test/test6.snek
+  104  echo "(sub1 (sub1 10))" > test/test7.snek
+  105  echo "(add1 (sub1 10))" > test/test8.snek
+  106  echo "(add1 (negate 3))" > test/test9.snek
+  107  echo "(sub1 (negate (add1 4)))" > test/test10.snek
+  108  cat test/test*.snek
+  109  make test/test3.run
+  110  ./test/test3.run
+  111  sudo apt install build-essential make nasm
+  112  make test/test3.run
+  113  ./test/test3.run
+  114  make test/test3.run
+  115  ./test/test3.run
+  116  for i in {1..10}; do   echo "Running test$i:";   make test/test$i.run;   ./test/test$i.run;   echo "-------------------"; done
+  117  make test/test1.run
+  118  ./test/test1.run
+  119  make test/test2.run
+  120  ./test/test2.run
+  121  make test/test3.run
+  122  ./test/test3.run
+  123  make test/test4.run
+  124  ./test/test4.run
+  125  make test/test5.run
+  126  ./test/test5.run
+  127  history > transcript.txt
