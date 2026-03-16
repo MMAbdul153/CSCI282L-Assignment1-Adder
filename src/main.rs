@@ -29,6 +29,7 @@ enum Expr {
     BinOp(Op2, Box<Expr>, Box<Expr>),
 }
 
+/// Converts S-expressions (like "(add1 5)") into our internal Expr AST.
 fn parse_expr(s: &Sexp) -> Expr {
     match s {
 
@@ -211,8 +212,12 @@ ret
 }
 
 fn main() -> io::Result<()> {
-
     let args: Vec<String> = env::args().collect();
+
+    // Basic check: Ensure we have enough arguments
+    if args.len() < 3 {
+        panic!("Usage: cargo run -- <input_file> <output_file>");
+    }
 
     let in_name = &args[1];
     let out_name = &args[2];
